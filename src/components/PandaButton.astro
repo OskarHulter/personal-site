@@ -1,6 +1,6 @@
 ---
 import { css } from '../../styled-system/css'
-import button from '../styles/button.recipe'
+import buttonStyles from '../styles/button.recipe'
 const body = 'Click me'
 export type ButtonProps = {
   body: string
@@ -9,14 +9,14 @@ export type ButtonProps = {
 
 <button
   type='button'
-  style={button({ bg: 'red.300', px: '2', py: '3' })}
+  style={buttonStyles({ bg: 'red.300', px: '2', py: '3' })}
 >
   {body}
 </button>
 
 <button
   type='button'
-  class={button({ bg: 'red.300', px: '2', py: '3' })}
+  class={buttonStyles({ bg: 'red.300', px: '2', py: '3' })}
 >
   {body}
 </button>
