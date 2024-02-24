@@ -5,7 +5,7 @@
   "scripts": {
     "prepare": "panda codegen",
     "start": "astro start",
-    "build": "astro check && astro build",
+    "build": "astro prepare && astro check && astro build",
     "preview": "astro preview",
     "dev": "astro dev",
     "astro": "astro"

@@ -1,0 +1,29 @@
+---
+import { css } from '../../styled-system/css'
+import button from '../styles/button.recipe'
+const body = 'Click me'
+export type ButtonProps = {
+  body: string
+}
+---
+
+<button
+  type='button'
+  style={button({ bg: 'red.300', px: '2', py: '3' })}
+>
+  {body}
+</button>
+
+<button
+  type='button'
+  class={button({ bg: 'red.300', px: '2', py: '3' })}
+>
+  {body}
+</button>
+
+<button
+  type='button'
+  class={css({ bg: 'red.300', px: '2', py: '3' })}
+>
+  {body}
+</button>
