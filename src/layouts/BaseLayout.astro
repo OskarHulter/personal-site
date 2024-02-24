@@ -16,7 +16,7 @@ const { pageTitle } = Astro.props
     />
     <meta
       name='viewport'
-      content='width=device-width'
+      content='width=device-width, initial-scale=1'
     />
     <meta
       name='generator'
@@ -32,7 +32,9 @@ const { pageTitle } = Astro.props
     />
     <h1 transition:animate="slide">{pageTitle}</h1>
 
-    <slot />
+    <article>
+      <slot /> <!-- your content is injected here -->
+    </article>    
     <Footer
       title='disclaimer'
       body='legalese'

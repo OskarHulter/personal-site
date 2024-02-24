@@ -1,5 +1,13 @@
 # Astro Starter Kit: Basics
 
+Astro supports importing and using .html files as components or placing these files within the src/pages/ subdirectory as pages. You may want to use HTML components if you’re reusing code from an existing site built without a framework, or if you want to ensure that your component has no dynamic features.
+
+HTML components must contain only valid HTML, and therefore lack key Astro component features:
+
+They don’t support frontmatter, server-side imports, or dynamic expressions.
+Any <script> tags are left unbundled, treated as if they had is:inline.
+They can only reference assets that are in the public/ folder.
+
 when they support bun
 https://github.com/advanced-astro/astro-min#readme
 ```sh
